@@ -56,7 +56,7 @@ function eventMsg(wxmsg,retmsg){
     retmsg.msgtype='text';
     switch(wxmsg.Event){
         case 'subscribe':
-            retmsg.msg = '你好，没用'
+            retmsg.msg = '你好，这是一个没什么用的测试号'
             return formatMsg(retmsg);
         case 'unsubscribe':
             console.log(wxmsg.FromUserName,'取消关注');

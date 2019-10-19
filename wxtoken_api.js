@@ -7,14 +7,29 @@ var token_api = `https://api.weixin.qq.com/cgi-bin/token`+`?grant_type=client_cr
 var menu_data = {
     button:[
         {
-            name:"Linux",
-            type:"view",
-            url:"https://www.linux.org"
+            type: "pic_weixin", 
+            name: "发图", 
+            key: "rselfmenu_1_2" 
         },
         {
-            name:"send",
+            name:"key",
             type:"click",
-            key:"send-msg"
+            key:"这是一个key值"
+        },
+        {
+            name:"菜单",
+            sub_button:[
+                {
+                    name:"百度搜索",
+                    type:"view",
+                    url:"https://www.baidu.com"
+                },
+                {
+                    type: "pic_sysphoto", 
+                    name: "拍照", 
+                    key: "rselfmenu_1_0", 
+                },
+            ]
         }
     ]
 };
